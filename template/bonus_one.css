@@ -2,6 +2,10 @@
   Don't forget to style the results from the search!
   And anything else you add to the application, for that matter.
 */
+html, body {
+  background-color: #c2d2e7;
+  margin: 0;
+}
 
 .flexsearch-wrapper {
   height: auto;
@@ -9,7 +13,7 @@
   max-width: 100%;
   overflow: hidden;
   background: transparent;
-  margin: 0;
+  margin: 0 1em;
   position: static;
 }
 
@@ -95,17 +99,22 @@ input:-moz-placeholder {
 }
 
 .h1 {
-  color: #333;
+  color: #FFFFFF;
   font-family: 'Helvetica', sans-serif;
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
   text-align: center;
+  background-color: #0C1155;
+  margin: 0 0 0.8em 0;
+  padding: 0.5em 0;
+  border-bottom: 3px solid #CCC;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .flexsearch-results {
   display: relative;
-  width: 95%;
+  width: 93%;
   margin: 0 auto;
   color: #333;
   font-family: 'Helvetica', sans-serif;
@@ -113,6 +122,7 @@ input:-moz-placeholder {
 }
 
 .flexsearch-results-wrapper {
+  background-color: #FFFFFF;
   border: 1px solid #B8B8B8;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   display: none;
