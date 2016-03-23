@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -7,10 +7,9 @@
 </head>
 <body>
 	<h1 class="h1">Predictive Search</h1>
-
+	
 	<div class="flexsearch">
 		<div class="flexsearch-wrapper">
-			<!-- You'll handle the form with js, so no need for method and action -->
 			<form class="flexsearch-form" id="mainForm">
 				<div class="flexsearch-input-wrapper">
 					<input class="flexsearch-input" type="search" placeholder="search">
@@ -18,9 +17,15 @@
 				<input class="flexsearch-submit" type="submit" value="&#10140;"/>
 			</form>
 		</div>
+		<!-- Added a container to hold an unordered list of search results -->
+		<div class="flexsearch-results">
+			<div class="flexsearch-results-wrapper">
+				<ul class="flexsearch-list">
+				</ul>
+			</div>
+		</div>
 	</div>
-
-
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="bonus_one.js"></script>
 </body>

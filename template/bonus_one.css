@@ -1,6 +1,6 @@
 /*
   Don't forget to style the results from the search!
-  And anything elese you add to the application, for that matter.
+  And anything else you add to the application, for that matter.
 */
 
 .flexsearch-wrapper {
@@ -58,7 +58,8 @@
   height: 60px;
   padding: 0;
   border: none;
-  margin-right: 5px;
+  outline: 0;
+  margin-right: 0px;
   background: transparent;
   color: #888;
   font-family: 'Helvetica', sans-serif;
@@ -80,6 +81,11 @@
   cursor: pointer;
 }
 
+.flexsearch-submit:active {
+  color: #1AB517;
+  cursor: pointer
+}
+
 ::-webkit-input-placeholder {
   color: #888;
 }
@@ -95,4 +101,39 @@ input:-moz-placeholder {
   font-weight: bold;
   line-height: 45px;
   text-align: center;
+}
+
+.flexsearch-results {
+  display: relative;
+  width: 95%;
+  margin: 0 auto;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 26px;
+}
+
+.flexsearch-results-wrapper {
+  border: 1px solid #B8B8B8;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.flexsearch-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flexsearch-list li {
+}
+
+.flexsearch-list a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 0.2em 0.5em;
+}
+
+.flexsearch-list a:hover {
+  background-color: #F1F1F1;
 }
